@@ -1,0 +1,51 @@
+selector .elementor-tabs-wrapper {
+    display:flex;
+    justify-content: center;
+}
+
+selector .elementor-tab-desktop-title[role="tab"] {
+    border-width: 1px;
+    
+/* change border color below */
+    border-color: #77AA22;
+    padding: 10px 0px;
+    width:160px;
+    text-align: center;
+/* change non-active background color below */
+    background-color: #FFFFFF;
+}
+
+/* change mobile width below */
+@media (max-width: 767px) { selector .elementor-tab-desktop-title[role="tab"] {
+    width:130px;
+}
+}
+
+/* first tab styling */ 
+selector .elementor-tab-desktop-title[role="tab"]:nth-child(1) {
+    border-radius: 20px 0px 0px 20px;
+    margin-right: -7px;
+}
+
+/* second tab stayling */ 
+selector .elementor-tab-desktop-title[role="tab"]:nth-child(2) {
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -7px;
+}
+
+/* change active background color below */
+selector .elementor-tab-desktop-title.elementor-active {
+    border-bottom-style: solid;
+    background-color: #77AA22;
+    border-radius: 20px!important;
+    z-index:2;
+}
+
+@media (max-width: 767px) { selector .elementor-tab-title {
+    border-bottom-style: solid;
+}
+}
+
+selector .elementor-tab-mobile-title {
+    display:none;
+}
